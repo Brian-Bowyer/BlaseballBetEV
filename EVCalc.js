@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Calculates the EV of a combo bet on blaseball.com
-// @author       BlackHumor
+// @author       Brian Bowyer
 // @match        https://www.blaseball.com/bets/new
 // @icon         https://www.google.com/s2/favicons?domain=blaseball.com
 // @grant        none
@@ -50,11 +50,6 @@
             }
         }
 
-        // newDiv.appendChild(divText);
-        // outcomeBox.appendChild(newDiv);
-//         } catch {
-//             console.log("Error!");
-//         }
     };
     var observer = new MutationObserver(callback);
     observer.observe(targetNode, config);
